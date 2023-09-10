@@ -1,0 +1,20 @@
+html 
+    head
+        title=titulo
+        link(rel="stylesheet", href="estilos.css")
+        link(rel="stylesheet", href="https:fonts.googleapis.com/icon?family=Material+Icons")
+    body 
+        //- p #{datos}  
+        div.container
+            input(type="text" placeholder="palabra" id="nombre")
+            //- input(type="text" placeholder="numero" id="numero")
+            button(id="btn_agregar") agregar palabra
+            input(type="text" placeholder="id" id="numero_idc")
+            input(type="text" placeholder="cambio palabra" id="nombrec")
+            //- input(type="text" placeholder="numero" id="numeroc")
+            button(id="btn_editar") editar palabra
+            each contacto in contactos  
+                div.contacto
+                    p= `${contacto.id_agenda} -- ${contacto.nombre_contacto}`
+                    span(class = "borrar material-icons" id=contacto.id_agenda) delete 
+    script(src= "funciones.js" )
