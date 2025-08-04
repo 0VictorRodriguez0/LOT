@@ -1,2 +1,2 @@
-# LOT
-Front End, No cuenta con la carpeta node_modules
+# Página CRUD
+Desarrollo de una página CRUD conectada a MySQL utilizando Express.js.
